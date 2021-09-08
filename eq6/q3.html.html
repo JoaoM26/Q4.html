@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<h1>Digite 8 Números em Ordem Crescente:</h1>
+<p>Número 1:</p>
+<input id="numero1" type="number">
+<p>Número 2:</p>
+<input id="numero2" type="number">
+<p>Número 3:</p>
+<input id="numero3" type="number">
+<p>Número 4:</p>
+<input id="numero4" type="number">
+<p>Número 5:</p>
+<input id="numero5" type="number">
+<p>Número 6:</p>
+<input id="numero6" type="number">
+<p>Número 7:</p>
+<input id="numero7" type="number">
+<p>Número 8:</p>
+<input id="numero8" type="number">
+<p></p>
+<button type="button" onclick="verificar()">Analisar Números</button>
+<p id="maiorn"> </p>
+<p></p>
+<p id="menorn"> </p>
+<p></p>
+<p id="meion"></p>
+<p></p>
+<p id= "s1"></p>
+<p></p>
+<p id= "s2"></p>
+<p></p>
+<p id= "s3"></p>
+<p></p>
+<p id= "s4"></p>
+<p></p>
+<p id= "s5"></p>
+<p></p>
+<p id= "s6"></p>
+<p></p>
+<p id= "s7"></p>
+<p></p>
+<p id= "s8"></p>
+<p></p>
+<script>
+function verificar(){
+    var signo = new Array();
+    signo[0] = "Aries"
+    signo[1] = "Touro"
+    signo[2] = "Gemeos"
+    signo[3] = "Cancer"
+    signo[4] = "Leao"
+    signo[5] = "Virgem"
+    signo[6] = "Libra"
+    signo[7] = "Escorpiao"
+    signo[8] = "Sargitario"
+    signo[9] = "Capricornio"
+    signo[10] = "Aquario"
+    signo[11] = "Peixe"
+
+
+    var numero1 = document.getElementById("numero1").value;
+    var numero2 = document.getElementById("numero2").value;
+    var numero3 = document.getElementById("numero3").value;
+    var numero4 = document.getElementById("numero4").value;
+    var numero5 = document.getElementById("numero5").value;
+    var numero6 = document.getElementById("numero6").value;
+    var numero7 = document.getElementById("numero7").value;
+    var numero8 = document.getElementById("numero8").value;
+
+    document.getElementById("maiorn").innerHTML = "O maior número é: " + numero8 + ".";
+    document.getElementById("menorn").innerHTML = "O menor número é: " + numero1 + ".";
+    document.getElementById("meion").innerHTML = "O número do meio é: " + numero4 + ".";
+
+    if (numero1<1) 
+        document.getElementById("s1").innerHTML = 'O Signo do 1º número é Dormir <br /> <img src="Dormir.png" alt="Dormir" style="width: 100px" style="height: 100px">';
+    if (numero1>12) 
+        document.getElementById("s1").innerHTML = 'O Signo do 1º número é Dormir <br /> <img src="Dormir.png" alt="Dormir" style="width: 100px" style="height: 100px">';
+    if (numero1==1) 
+        document.getElementById("s1").innerHTML = 'O Signo do 1º número é Áries <br /> <img src="Aries.png" alt="Áries" style="width: 100px" style="height: 100px">';
+    if (numero1==2) 
+        document.getElementById("s1").innerHTML = 'O Signo do 1º número é Touro <br /> <img src="Touro.png" alt="Touro" style="width: 100px" style="height: 100px">';
+    if (numero1==3) 
+        document.getElementById("s1").innerHTML = 'O Signo do 1º número é Gêmeos <br /> <img src="Gemeos.png" alt="Gêmeos" style="width: 100px" style="height: 100px">';
+    if (numero1==4) 
+        document.getElementById("s1").innerHTML = 'O Signo do 1º número é Câncer <br /> <img src="Cancer.png" alt="Câncer" style="width: 100px" style="height: 100px">';
+    if (numero1==5) 
+        document.getElementById("s1").innerHTML = 'O Signo do 1º número é Leão <br /> <img src="Leao.png" alt="Leão" style="width: 100px" style="height: 100px">';
+    if (numero1==6) 
+        document.getElementById("s1").innerHTML = 'O Signo do 1º número é Virgem <br /> <img src="Virgem.png" alt="Virgem" style="width: 100px" style="height: 100px">';
+    if (numero1==7) 
+        document.getElementById("s1").innerHTML = 'O Signo do 1º número é Libra <br /> <img src="Libra.png" alt="Libra" style="width: 100px" style="height: 100px">';
+    if (numero1==8) 
+        document.getElementById("s1").innerHTML = 'O Signo do 1º número é Escorpião <br /> <img src="Escorpiao.png" alt="Escorpião" style="width: 100px" style="height: 100px">';
+    if (numero1==9) 
+        document.getElementById("s1").innerHTML = 'O Signo do 1º número é Sargitário <br /> <img src="Sagitario.png" alt="Sagitário" style="width: 100px" style="height: 100px">';
+    if (numero1==10) 
+        document.getElementById("s1").innerHTML = 'O Signo do 1º número é Capricórnio <br /> <img src="Capricornio.png" alt="Capricórnio" style="width: 100px" style="height: 100px">';
+    if (numero1==11) 
+        document.getElementById("s1").innerHTML = 'O Signo do 1º número é Aquário <br /> <img src="Aquario.png" alt="Aquário" style="width: 100px" style="height: 100px">';
+    if (numero1==12) 
+        document.getElementById("s1").innerHTML = 'O Signo do 1º número é Peixes <br /> <img src="Peixes.png" alt="Peixes" style="width: 100px" style="height: 100px">';
+
+    if (numero2<1) 
+        document.getElementById("s2").innerHTML = 'O Signo do 2º número é Dormir <br /> <img src="Dormir.png" alt="Dormir" style="width: 100px" style="height: 100px">';
+    if (numero2>12)
+        document.getElementById("s2").innerHTML = 'O Signo do 2º número é Dormir <br /> <img src="Dormir.png" alt="Dormir" style="width: 100px" style="height: 100px">';
+    if (numero2==1) 
+        document.getElementById("s2").innerHTML = 'O Signo do 2º número é Áries <br /> <img src="Aries.png" alt="Áries" style="width: 100px" style="height: 100px">';
+    if (numero2==2) 
+        document.getElementById("s2").innerHTML = 'O Signo do 2º número é Touro <br /> <img src="Touro.png" alt="Touro" style="width: 100px" style="height: 100px">';
+    if (numero2==3) 
+        document.getElementById("s2").innerHTML = 'O Signo do 2º número é Gêmeos <br /> <img src="Gemeos.png" alt="Gêmeos" style="width: 100px" style="height: 100px">';
+    if (numero2==4) 
+        document.getElementById("s2").innerHTML = 'O Signo do 2º número é Câncer <br /> <img src="Cancer.png" alt="Câncer" style="width: 100px" style="height: 100px">';
+    if (numero2==5) 
+        document.getElementById("s2").innerHTML = 'O Signo do 2º número é Leão <br /> <img src="Leao.png" alt="Leão" style="width: 100px" style="height: 100px">';
+    if (numero2==6) 
+        document.getElementById("s2").innerHTML = 'O Signo do 2º número é Virgem <br /> <img src="Virgem.png" alt="Virgem" style="width: 100px" style="height: 100px">';
+    if (numero2==7) 
+        document.getElementById("s2").innerHTML = 'O Signo do 2º número é Libra <br /> <img src="Libra.png" alt="Libra" style="width: 100px" style="height: 100px">';
+    if (numero2==8) 
+        document.getElementById("s2").innerHTML = 'O Signo do 2º número é Escorpião <br /> <img src="Escorpiao.png" alt="Escorpião" style="width: 100px" style="height: 100px">';
+    if (numero2==9) 
+        document.getElementById("s2").innerHTML = 'O Signo do 2º número é Sargitário <br /> <img src="Sagitario.png" alt="Sagitário" style="width: 100px" style="height: 100px">';
+    if (numero2==10) 
+        document.getElementById("s2").innerHTML = 'O Signo do 2º número é Capricórnio <br /> <img src="Capricornio.png" alt="Capricórnio" style="width: 100px" style="height: 100px">';
+    if (numero2==11) 
+        document.getElementById("s2").innerHTML = 'O Signo do 2º número é Aquário <br /> <img src="Aquario.png" alt="Aquário" style="width: 100px" style="height: 100px">';
+    if (numero2==12) 
+        document.getElementById("s2").innerHTML = 'O Signo do 2º número é Peixes <br /> <img src="Peixes.png" alt="Peixes" style="width: 100px" style="height: 100px">';
+
+    if (numero3<1) 
+        document.getElementById("s3").innerHTML = 'O Signo do 3º número é Dormir <br /> <img src="Dormir.png" alt="Dormir" style="width: 100px" style="height: 100px">';
+    if (numero3>12)
+        document.getElementById("s3").innerHTML = 'O Signo do 3º número é Dormir <br /> <img src="Dormir.png" alt="Dormir" style="width: 100px" style="height: 100px">';
+    if (numero3==1) 
+        document.getElementById("s3").innerHTML = 'O Signo do 3º número é Áries <br /> <img src="Aries.png" alt="Áries" style="width: 100px" style="height: 100px">';
+    if (numero3==2) 
+        document.getElementById("s3").innerHTML = 'O Signo do 3º número é Touro <br /> <img src="Touro.png" alt="Touro" style="width: 100px" style="height: 100px">';
+    if (numero3==3) 
+        document.getElementById("s3").innerHTML = 'O Signo do 3º número é Gêmeos <br /> <img src="Gemeos.png" alt="Gêmeos" style="width: 100px" style="height: 100px">';
+    if (numero3==4) 
+        document.getElementById("s3").innerHTML = 'O Signo do 3º número é Câncer <br /> <img src="Cancer.png" alt="Câncer" style="width: 100px" style="height: 100px">';
+    if (numero3==5) 
+        document.getElementById("s3").innerHTML = 'O Signo do 3º número é Leão <br /> <img src="Leao.png" alt="Leão" style="width: 100px" style="height: 100px">';
+    if (numero3==6) 
+        document.getElementById("s3").innerHTML = 'O Signo do 3º número é Virgem <br /> <img src="Virgem.png" alt="Virgem" style="width: 100px" style="height: 100px">';
+    if (numero3==7) 
+        document.getElementById("s3").innerHTML = 'O Signo do 3º número é Libra <br /> <img src="Libra.png" alt="Libra" style="width: 100px" style="height: 100px">';
+    if (numero3==8) 
+        document.getElementById("s3").innerHTML = 'O Signo do 3º número é Escorpião <br /> <img src="Escorpiao.png" alt="Escorpião" style="width: 100px" style="height: 100px">';
+    if (numero3==9) 
+        document.getElementById("s3").innerHTML = 'O Signo do 3º número é Sargitário <br /> <img src="Sagitario.png" alt="Sagitário" style="width: 100px" style="height: 100px">';
+    if (numero3==10) 
+        document.getElementById("s3").innerHTML = 'O Signo do 3º número é Capricórnio <br /> <img src="Capricornio.png" alt="Capricórnio" style="width: 100px" style="height: 100px">';
+    if (numero3==11) 
+        document.getElementById("s3").innerHTML = 'O Signo do 3º número é Aquário <br /> <img src="Aquario.png" alt="Aquário" style="width: 100px" style="height: 100px">';
+    if (numero3==12) 
+        document.getElementById("s3").innerHTML = 'O Signo do 3º número é Peixes <br /> <img src="Peixes.png" alt="Peixes" style="width: 100px" style="height: 100px">';
+
+    if (numero4<1) 
+        document.getElementById("s4").innerHTML = 'O Signo do 4º número é Dormir <br /> <img src="Dormir.png" alt="Dormir" style="width: 100px" style="height: 100px">';
+    if (numero4>12)
+        document.getElementById("s4").innerHTML = 'O Signo do 4º número é Dormir <br /> <img src="Dormir.png" alt="Dormir" style="width: 100px" style="height: 100px">';
+    if (numero4==1) 
+        document.getElementById("s4").innerHTML = 'O Signo do 4º número é Áries <br /> <img src="Aries.png" alt="Áries" style="width: 100px" style="height: 100px">';
+    if (numero4==2) 
+        document.getElementById("s4").innerHTML = 'O Signo do 4º número é Touro <br /> <img src="Touro.png" alt="Touro" style="width: 100px" style="height: 100px">';
+    if (numero4==3) 
+        document.getElementById("s4").innerHTML = 'O Signo do 4º número é Gêmeos <br /> <img src="Gemeos.png" alt="Gêmeos" style="width: 100px" style="height: 100px">';
+    if (numero4==4) 
+        document.getElementById("s4").innerHTML = 'O Signo do 4º número é Câncer <br /> <img src="Cancer.png" alt="Câncer" style="width: 100px" style="height: 100px">';
+    if (numero4==5) 
+        document.getElementById("s4").innerHTML = 'O Signo do 4º número é Leão <br /> <img src="Leao.png" alt="Leão" style="width: 100px" style="height: 100px">';
+    if (numero4==6) 
+        document.getElementById("s4").innerHTML = 'O Signo do 4º número é Virgem <br /> <img src="Virgem.png" alt="Virgem" style="width: 100px" style="height: 100px">';
+    if (numero4==7) 
+        document.getElementById("s4").innerHTML = 'O Signo do 4º número é Libra <br /> <img src="Libra.png" alt="Libra" style="width: 100px" style="height: 100px">';
+    if (numero4==8) 
+        document.getElementById("s4").innerHTML = 'O Signo do 4º número é Escorpião <br /> <img src="Escorpiao.png" alt="Escorpião" style="width: 100px" style="height: 100px">';
+    if (numero4==9) 
+        document.getElementById("s4").innerHTML = 'O Signo do 4º número é Sargitário <br /> <img src="Sagitario.png" alt="Sagitário" style="width: 100px" style="height: 100px">';
+    if (numero4==10) 
+        document.getElementById("s4").innerHTML = 'O Signo do 4º número é Capricórnio <br /> <img src="Capricornio.png" alt="Capricórnio" style="width: 100px" style="height: 100px">';
+    if (numero4==11) 
+        document.getElementById("s4").innerHTML = 'O Signo do 4º número é Aquário <br /> <img src="Aquario.png" alt="Aquário" style="width: 100px" style="height: 100px">';
+    if (numero4==12) 
+        document.getElementById("s4").innerHTML = 'O Signo do 4º número é Peixes <br /> <img src="Peixes.png" alt="Peixes" style="width: 100px" style="height: 100px">';
+
+    if (numero5<1) 
+        document.getElementById("s5").innerHTML = 'O Signo do 5º número é Dormir <br /> <img src="Dormir.png" alt="Dormir" style="width: 100px" style="height: 100px">';
+    if (numero5>12)
+        document.getElementById("s5").innerHTML = 'O Signo do 5º número é Dormir <br /> <img src="Dormir.png" alt="Dormir" style="width: 100px" style="height: 100px">';
+    if (numero5==1) 
+        document.getElementById("s5").innerHTML = 'O Signo do 5º número é Áries <br /> <img src="Aries.png" alt="Áries" style="width: 100px" style="height: 100px">';
+    if (numero5==2) 
+        document.getElementById("s5").innerHTML = 'O Signo do 5º número é Touro <br /> <img src="Touro.png" alt="Touro" style="width: 100px" style="height: 100px">';
+    if (numero5==3) 
+        document.getElementById("s5").innerHTML = 'O Signo do 5º número é Gêmeos <br /> <img src="Gemeos.png" alt="Gêmeos"  style="width: 100px" style="height: 100px">';
+    if (numero5==4) 
+        document.getElementById("s5").innerHTML = 'O Signo do 5º número é Câncer <br /> <img src="Cancer.png" alt="Câncer" style="width: 100px" style="height: 100px">';
+    if (numero5==5) 
+        document.getElementById("s5").innerHTML = 'O Signo do 5º número é Leão <br /> <img src="Leao.png" alt="Leão" style="width: 100px" style="height: 100px">';
+    if (numero5==6) 
+        document.getElementById("s5").innerHTML = 'O Signo do 5º número é Virgem <br /> <img src="Virgem.png" alt="Virgem" style="width: 100px" style="height: 100px">';
+    if (numero5==7) 
+        document.getElementById("s5").innerHTML = 'O Signo do 5º número é Libra <br /> <img src="Libra.png" alt="Libra" style="width: 100px" style="height: 100px">';
+    if (numero5==8) 
+        document.getElementById("s5").innerHTML = 'O Signo do 5º número é Escorpião <br /> <img src="Escorpiao.png" alt="Escorpião" style="width: 100px" style="height: 100px">';
+    if (numero5==9) 
+        document.getElementById("s5").innerHTML = 'O Signo do 5º número é Sargitário <br /> <img src="Sagitario.png" alt="Sagitário" style="width: 100px" style="height: 100px">';
+    if (numero5==10) 
+        document.getElementById("s5").innerHTML = 'O Signo do 5º número é Capricórnio <br /> <img src="Capricornio.png" alt="Capricórnio" style="width: 100px" style="height: 100px">';
+    if (numero5==11) 
+        document.getElementById("s5").innerHTML = 'O Signo do 5º número é Aquário <br /> <img src="Aquario.png" alt="Aquário" style="width: 100px" style="height: 100px">';
+    if (numero5==12) 
+        document.getElementById("s5").innerHTML = 'O Signo do 5º número é Peixes <br /> <img src="Peixes.png" alt="Peixes" style="width: 100px" style="height: 100px">';
+
+    if (numero6<1) 
+        document.getElementById("s6").innerHTML = 'O Signo do 6º número é Dormir <br /> <img src="Dormir.png" alt="Dormir" style="width: 100px" style="height: 100px">';
+    if (numero6>12)
+        document.getElementById("s6").innerHTML = 'O Signo do 6º número é Dormir <br /> <img src="Dormir.png" alt="Dormir"  style="width: 100px" style="height: 100px">';
+    if (numero6==1) 
+        document.getElementById("s6").innerHTML = 'O Signo do 6º número é Áries <br /> <img src="Aries.png" alt="Áries"  style="width: 100px" style="height: 100px">';
+    if (numero6==2) 
+        document.getElementById("s6").innerHTML = 'O Signo do 6º número é Touro <br /> <img src="Touro.png" alt="Touro"  style="width: 100px" style="height: 100px">';
+    if (numero6==3) 
+        document.getElementById("s6").innerHTML = 'O Signo do 6º número é Gêmeos <br /> <img src="Gemeos.png" alt="Gêmeos"  style="width: 100px" style="height: 100px">';
+    if (numero6==4) 
+        document.getElementById("s6").innerHTML = 'O Signo do 6º número é Câncer <br /> <img src="Cancer.png" alt="Câncer"  style="width: 100px" style="height: 100px">';
+    if (numero6==5) 
+        document.getElementById("s6").innerHTML = 'O Signo do 6º número é Leão <br /> <img src="Leao.png" alt="Leão"  style="width: 100px" style="height: 100px">';
+    if (numero6==6) 
+        document.getElementById("s6").innerHTML = 'O Signo do 6º número é Virgem <br /> <img src="Virgem.png" alt="Virgem"  style="width: 100px" style="height: 100px">';
+    if (numero6==7) 
+        document.getElementById("s6").innerHTML = 'O Signo do 6º número é Libra <br /> <img src="Libra.png" alt="Libra"  style="width: 100px" style="height: 100px">';
+    if (numero6==8) 
+        document.getElementById("s6").innerHTML = 'O Signo do 6º número é Escorpião <br /> <img src="Escorpiao.png" alt="Escorpião"  style="width: 100px" style="height: 100px">';
+    if (numero6==9) 
+        document.getElementById("s6").innerHTML = 'O Signo do 6º número é Sargitário <br /> <img src="Sagitario.png" alt="Sagitário"  style="width: 100px" style="height: 100px">';
+    if (numero6==10) 
+        document.getElementById("s6").innerHTML = 'O Signo do 6º número é Capricórnio <br /> <img src="Capricornio.png" alt="Capricórnio"  style="width: 100px" style="height: 100px">';
+    if (numero6==11) 
+        document.getElementById("s6").innerHTML = 'O Signo do 6º número é Aquário <br /> <img src="Aquario.png" alt="Aquário"  style="width: 100px" style="height: 100px">';
+    if (numero6==12) 
+        document.getElementById("s6").innerHTML = 'O Signo do 6º número é Peixes <br /> <img src="Peixes.png" alt="Peixes"  style="width: 100px" style="height: 100px">';
+
+    if (numero7<1)
+        document.getElementById("s7").innerHTML = 'O Signo do 7º número é Dormir <br /> <img src="Dormir.png" alt="Dormir"  style="width: 100px" style="height: 100px">';
+    if (numero7>12)
+        document.getElementById("s7").innerHTML = 'O Signo do 7º número é Dormir <br /> <img src="Dormir.png" alt="Dormir" style="width: 100px" style="height: 100px">';
+    if (numero7==1) 
+        document.getElementById("s7").innerHTML = 'O Signo do 7º número é Áries <br /> <img src="Aries.png" alt="Áries" style="width: 100px" style="height: 100px">';
+    if (numero7==2) 
+        document.getElementById("s7").innerHTML = 'O Signo do 7º número é Touro <br /> <img src="Touro.png" alt="Touro" style="width: 100px" style="height: 100px">';
+    if (numero7==3) 
+        document.getElementById("s7").innerHTML = 'O Signo do 7º número é Gêmeos <br /> <img src="Gemeos.png" alt="Gêmeos" style="width: 100px" style="height: 100px">';
+    if (numero7==4) 
+        document.getElementById("s7").innerHTML = 'O Signo do 7º número é Câncer <br /> <img src="Cancer.png" alt="Câncer" style="width: 100px" style="height: 100px">';
+    if (numero7==5) 
+        document.getElementById("s7").innerHTML = 'O Signo do 7º número é Leão <br /> <img src="Leao.png" alt="Leão" style="width: 100px" style="height: 100px">';
+    if (numero7==6) 
+        document.getElementById("s7").innerHTML = 'O Signo do 7º número é Virgem <br /> <img src="Virgem.png" alt="Virgem" style="width: 100px" style="height: 100px">';
+    if (numero7==7) 
+        document.getElementById("s7").innerHTML = 'O Signo do 7º número é Libra <br /> <img src="Libra.png" alt="Libra" style="width: 100px" style="height: 100px">';
+    if (numero7==8) 
+        document.getElementById("s7").innerHTML = 'O Signo do 7º número é Escorpião <br /> <img src="Escorpiao.png" alt="Escorpião" style="width: 100px" style="height: 100px">';
+    if (numero7==9) 
+        document.getElementById("s7").innerHTML = 'O Signo do 7º número é Sagitário <br /> <img src="Sagitario.png" alt="Sagitário" style="width: 100px" style="height: 100px">';
+    if (numero7==10) 
+        document.getElementById("s7").innerHTML = 'O Signo do 7º número é Capricórnio <br /> <img src="Capricornio.png" alt="Capricórnio" style="width: 100px" style="height: 100px">';
+    if (numero7==11) 
+        document.getElementById("s7").innerHTML = 'O Signo do 7º número é Aquário <br /> <img src="Aquario.png" alt="Aquário" style="width: 100px" style="height: 100px">';
+    if (numero7==12) 
+        document.getElementById("s7").innerHTML = 'O Signo do 7º número é Peixe <br /> <img src="Peixes.png" alt="Peixes" style="width: 100px" style="height: 100px">';
+
+    if (numero8<1)
+        document.getElementById("s8").innerHTML = 'O Signo do 8º número é Dormir <br /> <img src="Dormir.png" alt="Dormir" style="width: 100px" style="height: 100px">';
+    if (numero8>12)
+        document.getElementById("s8").innerHTML = 'O Signo do 8º número é Dormir <br /> <img src="Dormir.png" alt="Dormir" style="width: 100px" style="height: 100px">';
+    if (numero8==1) 
+        document.getElementById("s8").innerHTML = 'O Signo do 8º número é Áries <br /> <img src="Aries.png" alt="Áries" style="width: 100px" style="height: 100px">';
+    if (numero8==2) 
+        document.getElementById("s8").innerHTML = 'O Signo do 8º número é Touro <br /> <img src="Touro.png" alt="Touro" style="width: 100px" style="height: 100px">';
+    if (numero8==3) 
+        document.getElementById("s8").innerHTML = 'O Signo do 8º número é Gêmeos <br /> <img src="Gemeos.png" alt="Gêmeos" style="width: 100px" style="height: 100px">';
+    if (numero8==4) 
+        document.getElementById("s8").innerHTML = 'O Signo do 8º número é Câncer <br /> <img src="Cancer.png" alt="Câncer" style="width: 100px" style="height: 100px">';
+    if (numero8==5) 
+        document.getElementById("s8").innerHTML = 'O Signo do 8º número é Leão <br /> <img src="Leao.png" alt="Leão" style="width: 100px height: 100px">';
+    if (numero8==6) 
+        document.getElementById("s8").innerHTML = 'O Signo do 8º número é Virgem <br /> <img src="Virgem.png" alt="Virgem" style="width: 100px" style="height: 100px">';
+    if (numero8==7) 
+        document.getElementById("s8").innerHTML = 'O Signo do 8º número é Libra <br /> <img src="Libra.png" alt="Libra" style="width: 100px" style="height: 100px">';
+    if (numero8==8) 
+        document.getElementById("s8").innerHTML = 'O Signo do 8º número é Escorpião <br /> <img src="Escorpiao.png" alt="Escorpião" style="width: 100px" style="height: 100px">';
+    if (numero8==9) 
+        document.getElementById("s8").innerHTML = 'O Signo do 8º número é Sagitário <br /> <img src="Sagitario.png" alt="Sagitário" style="width: 100px" style="height: 100px">';
+    if (numero8==10) 
+        document.getElementById("s8").innerHTML = 'O Signo do 8º número é Capricórnio <br /> <img src="Capricornio.png" alt="Capricórnio" style="width: 100px" style="height: 100px">';
+    if (numero8==11) 
+        document.getElementById("s8").innerHTML = 'O Signo do 8º número é Aquário <br /> <img src="Aquario.png" alt="Aquário" style="width: 100px" style="height: 100px">';
+    if (numero8==12) 
+        document.getElementById("s8").innerHTML = 'O Signo do 8º número é Peixe <br /> <img src="Peixes.png" alt="Peixes" style="width: 100px" style="height: 100px">';
+}
+</script>

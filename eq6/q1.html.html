@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - Questão 1</title>
+
+    <link rel="stylesheet" type="text/css" href="q1.css">
+</head>
+
+<body>
+    <div id="root">
+        <div id="input">
+            <input id="campoNum1" type="number" class="input" placeholder="Insira o 1º número">
+            <input id="campoNum2" type="number" class="input" placeholder="Insira o 2º número">
+            <input id="campoNum3" type="number" class="input" placeholder="Insira o 3º número">
+            <input id="campoNum4" type="number" class="input" placeholder="Insira o 4º número">
+            <input id="campoNum5" type="number" class="input" placeholder="Insira o 5º número">
+            <input id="campoNum6" type="number" class="input" placeholder="Insira o 6º número">
+            <a class="botao-inserir" onclick="handleCalcula()">
+                <h1>Inserir</h1>
+            </a>
+        </div>
+        <table id="tabela">
+            <thead>
+                <tr id="cabecalho">
+                    <th>Média Ponderada</th>
+                    <th>Somatório/Moda</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="linha1">
+                    <td id="media">&nbsp;</td>
+                    <td id="somatorio">&nbsp;</td>
+                </tr>
+                <tr id="linha2">
+                    <td id="media1">&nbsp;</td>
+                    <td id="somatorio1">&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="index.html" class="botao">
+            <h1>Voltar</h1>
+        </a>
+    </div>
+
+    <noscript>Habilite o JavaScript no browser!</noscript>
+    <script src="q1.js"></script>
+</body>
+
+</html>
